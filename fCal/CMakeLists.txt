@@ -80,6 +80,8 @@ SET(fCal_LIBS
   vtkPlusCalibration 
   vtkPlusDataCollection 
   vtkPlusVolumeReconstruction
+  ${PLUSAPP_VTK_PREFIX}FiltersParallel
+  ${PLUSAPP_VTK_PREFIX}RenderingContextOpenGL2
   )
 IF(TARGET ${PLUSAPP_VTK_PREFIX}RenderingGL2PS${VTK_RENDERING_BACKEND})
   LIST(APPEND fCal_LIBS
